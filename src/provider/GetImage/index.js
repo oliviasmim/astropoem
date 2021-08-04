@@ -4,7 +4,12 @@ import { nasaAPI } from "../../services/nasaAPI";
 
 const NasaPhotoContext = createContext();
 
+
 export const NasaPhotoProvider = ({ children }) => {
+    const event = new Date();
+    const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+    const date = event.toLocaleDateString('en-US', options);
+
     const [photoData, setPhotoData] = useState(null);
 
     const fetchPhoto = () => {
@@ -34,7 +39,7 @@ export const NasaPhotoProvider = ({ children }) => {
     return (
         <NasaPhotoContext.Provider 
             value={{
-                date: photoData.date, 
+                date: date, 
                 explanation: photoData.explanation,
                 type: photoData.media_type,
                 title: photoData.title,

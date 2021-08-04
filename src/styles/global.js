@@ -11,10 +11,14 @@ export default createGlobalStyle`
     :root {
         --white: #EEEEEE;
         --red: #FF4C29;
+        --dark-red: #740a07;
         --dark: #082032;
         --dark-blue: #0F044C;
         --gray: #787A91;
         --font-title: 'Archivo Black', sans-serif;
+        --title-color: #333333;
+        --subtitle-color: #666666;
+        --content-color: #444444;
         --font-text: 'Gothic A1', sans-serif;
     }
 
