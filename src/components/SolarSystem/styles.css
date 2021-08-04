@@ -1,0 +1,242 @@
+
+  .solarContainer {
+    position: absolute;
+    top: 46%; 
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 380px;
+    height: 380px;
+  }
+  
+  #sun {
+    /* position: absolute; */
+    position: relative;
+    top: calc(50% - 90px);
+    left: calc(50% - 30px);
+    height: 60px;
+    width: 60px; 
+    /* transform: translate(-70%, -50%); */
+    /*antes*/
+    /* margin-top: -60px;
+    margin-left: -50px; */
+    background-color: #FFC74A;
+    border-radius: 50%;
+    opacity: .6;
+  }
+  
+  #mercury {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #FF7A18;
+    border-radius: 50%;
+    opacity: .6;
+  }
+
+  #mercury-orbit {
+    position: relative;
+    top: calc(50% - 190px);
+    left: calc(50% - 80px);
+    /* position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 50%;
+top: 50%;
+text-align: center; */
+    width: 150px;
+    height: 150px;
+    
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    opacity: .7;
+    /* Animating Mercury - Rotation and Speed */
+    -webkit-animation: spin-right 5s linear infinite;
+    -moz-animation: spin-right 5s linear infinite;
+    -ms-animation: spin-right 5s linear infinite;
+    -o-animation: spin-right 5s linear infinite;
+    animation: spin-right 5s linear infinite;
+    }
+  /* Properties for the Venus */
+#venus {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    height: 30px;
+    width: 30px;
+    margin-left: -15px;
+    margin-top: -15px;
+    background-color: #DB2520;
+    border-radius: 50%;
+    opacity: .6;
+    }
+    /* Properties for - Position / Orbit / Radius / Rotation */
+    #venus-orbit {
+    position: relative;
+    top: calc(50% - 370px);
+    left: calc(50% - 110px);
+    width: 200px;
+    height: 200px;
+    /* margin-top: -250px;
+    margin-left: -250px; */
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    opacity: .7;
+    /* Animating Venus - Rotation and Speed */
+    -webkit-animation: spin-right 5s linear infinite;
+    -moz-animation: spin-right 5s linear infinite;
+    -ms-animation: spin-right 5s linear infinite;
+    -o-animation: spin-right 5s linear infinite;
+    animation: spin-right 5s linear infinite;
+    }
+    /* End of Venus's Properties */
+    /* Properties for the Earth */
+    #earth {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 30px;
+    width: 30px;
+    margin-left: -20px;
+    margin-top: -20px;
+    background-color: #296ab6;
+    border-radius: 50%;
+    opacity: .6;
+    }
+    /* Properties for - Position / Orbit / Radius / Rotation */
+    #earth-orbit {
+    position: relative;
+    top: calc(50% - 600px);
+    left: calc(50% - 140px);
+    width: 250px;
+    height: 250px;
+    /* margin-top: -250px;
+    margin-left: -250px; */
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    opacity: .7;
+    /* Animating Earth - Rotation and Speed */
+    -webkit-animation: spin-right 10s linear infinite;
+    -moz-animation: spin-right 10s linear infinite;
+    -ms-animation: spin-right 10s linear infinite;
+    -o-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+    }
+    /* End of Earth's Properties */
+    /* Properties for the Mars */
+    #mars {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    height: 20px;
+    width: 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    background-color: #a32924;
+
+    border-radius: 50%;
+    opacity: .6;
+    }
+    /* Properties for - Position / Orbit / Radius / Rotation */
+    #mars-orbit {
+    position: relative;
+    top: calc(50% - 880px);
+    left: calc(50% - 170px);
+    width: 300px;
+    height: 300px;
+    /* margin-top: -250px;
+    margin-left: -250px; */
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    opacity: .7;
+    /* Animating Mars - Rotation and Speed */
+    -webkit-animation: spin-right 15s linear infinite;
+    -moz-animation: spin-right 15s linear infinite;
+    -ms-animation: spin-right 15s linear infinite;
+    -o-animation: spin-right 15s linear infinite;
+    animation: spin-right 15s linear infinite;
+    }
+    /* End of Mars' Properties */
+    /* Properties for the Jupiter */
+    #jupiter {
+    position: absolute;
+    top: 0%;
+    left: 45%;
+    height: 50px;
+    width: 50px;
+    margin-left: -28px;
+    margin-top: -28px;
+    background-color: #4294ad;
+    border-radius: 50%;
+    opacity: .6;
+    }
+    /* Properties for - Position / Orbit / Radius / Rotation */
+    #jupiter-orbit {
+    position: relative;
+    top: calc(50% - 1200px);
+    left: calc(50% - 195px);
+    width: 350px;
+    height: 350px;
+    /* margin-top: -250px;
+    margin-left: -250px; */
+    border-width: 2px;
+    border-style: dotted;
+    border-color: white;
+    border-radius: 50%;
+    opacity: .7;
+    /* Animating Jupiter - Rotation and Speed */
+    -webkit-animation: spin-right 20s linear infinite;
+    -moz-animation: spin-right 20s linear infinite;
+    -ms-animation: spin-right 20s linear infinite;
+    -o-animation: spin-right 20s linear infinite;
+    animation: spin-right 20s linear infinite;
+    }
+    
+    /* End of Neptune's Properties */
+    /* Keyframes for Roatation - Right */
+    @-webkit-keyframes spin-right {
+    100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+    }
+    @keyframes spin-right {
+    100% {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+    }
+
+    @media (max-width: 720px){
+        .solarContainer {
+            width: 300px;
+            height: 300px;
+          }
+
+          #jupiter-orbit {
+            position: relative;
+            top: calc(50% - 1200px);
+            left: calc(50% - 180px);
+            width: 320px;
+            height: 320px;
+
+            }
+    }
