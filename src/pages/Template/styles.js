@@ -11,17 +11,19 @@ export const Section = styled.section`
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 90vw;
 
     button {
         @media (min-width: 768px){
             padding: 0.5rem 1.8rem;
             border-radius: 20px;
         }
+        
         font-family: var(--font-text);
         color: var(--white);
         background-color: #a32924; 
         border: 1px solid var(--white);
-        font-weight: bold;
+        font-weight: 700;
         margin: 1rem;
      &:hover {
         color: var(--white);
@@ -39,12 +41,15 @@ export const Title = styled.h1`
     font-family: var(--font-title);
     color: var(--white);
     font-size: 3rem;
-    text-shadow: 1px 1px 1px #740a07;
+    text-shadow: 2px 3px 1px #740a07;
 `
 
 export const Subtitle = styled.h2`
+@media (max-width: 768px){
+    font-size: 1rem;
+}
     font-family: var(--font-text);
     color: var(--white);
-    text-shadow: 2px 3px 3px var(--dark-blue);
+    text-shadow: 2px 2px  var(--dark-blue);
     
 `
