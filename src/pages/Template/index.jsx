@@ -6,7 +6,7 @@ import { useGoHome } from "../../provider/GoHome";
 
 export const Template = () => {
     const { handleButtonGoHome } = useGoHome();
-
+        
     return (
         <Container>
             <StarsBackground />       

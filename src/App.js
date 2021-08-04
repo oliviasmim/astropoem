@@ -1,18 +1,14 @@
 import { Routes } from "./routes";
 import GlobalStyle from "./styles/global";
-import { GoHomeProvider } from "./provider/GoHome";
-import { NasaPhotoProvider } from "./provider/getImage";
+import Providers from "./provider";
 
 function App() {
   return (
     <>
     <GlobalStyle />
-    
-    <NasaPhotoProvider>
-      <GoHomeProvider>
+      <Providers>
        <Routes />
-    </GoHomeProvider>
-    </NasaPhotoProvider>
+      </Providers>
     </>
   );
 }

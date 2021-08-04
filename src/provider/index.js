@@ -1,12 +1,15 @@
 import { GoHomeProvider } from "./GoHome";
-import { NasaPhotoProvider } from "./getImage";
+import { NasaPhotoProvider } from "./GetImage";
+import { GetPoemProvider } from "./GetPoem";
 const Providers = ({ children }) => {
     return (
+        <GetPoemProvider>
         <NasaPhotoProvider>
-        <GoHomeProvider>
-            {children}
-        </GoHomeProvider>
-    </NasaPhotoProvider>
+            <GoHomeProvider>
+                {children}
+            </GoHomeProvider>
+        </NasaPhotoProvider>
+        </GetPoemProvider>
     )
 };
 
