@@ -10,7 +10,6 @@ export const Container = styled.section`
     background-color: var(--white);
     padding: 0.8rem;
     border-radius: 1rem;
-    /* min-height: 40vh; */
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
