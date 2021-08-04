@@ -18,18 +18,18 @@ export const Section = styled.section`
             padding: 0.5rem 1.8rem;
             border-radius: 20px;
         }
-        
         font-family: var(--font-text);
         color: var(--white);
         background-color: #a32924; 
         border: 1px solid var(--white);
         font-weight: 700;
         margin: 1rem;
+
      &:hover {
         color: var(--white);
         border: 1px solid var(--red);
         background-color: #681411;
-    }
+      }
     }
 `
 

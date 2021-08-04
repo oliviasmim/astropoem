@@ -7,7 +7,7 @@
     text-align: center;
     width: 380px;
     height: 380px;
-}
+  }
   
   #sun {
     position: relative;
@@ -45,7 +45,6 @@
     border-radius: 50%;
     opacity: .7;
 
-    /* Animating Mercury - Rotation and Speed */
     -webkit-animation: spin-right 5s linear infinite;
     -moz-animation: spin-right 5s linear infinite;
     -ms-animation: spin-right 5s linear infinite;
@@ -53,7 +52,6 @@
     animation: spin-right 5s linear infinite;
   }
 
-  /* Properties for the Venus */
 #venus {
     position: absolute;
     top: 0%;
@@ -66,29 +64,26 @@
     border-radius: 50%;
     opacity: .6;
     }
-    /* Properties for - Position / Orbit / Radius / Rotation */
+
     #venus-orbit {
     position: relative;
     top: calc(50% - 370px);
     left: calc(50% - 110px);
     width: 200px;
     height: 200px;
-    /* margin-top: -250px;
-    margin-left: -250px; */
     border-width: 2px;
     border-style: dotted;
     border-color: white;
     border-radius: 50%;
     opacity: .7;
-    /* Animating Venus - Rotation and Speed */
+
     -webkit-animation: spin-right 5s linear infinite;
     -moz-animation: spin-right 5s linear infinite;
     -ms-animation: spin-right 5s linear infinite;
     -o-animation: spin-right 5s linear infinite;
     animation: spin-right 5s linear infinite;
     }
-    /* End of Venus's Properties */
-    /* Properties for the Earth */
+
     #earth {
     position: absolute;
     top: 0;
@@ -101,29 +96,26 @@
     border-radius: 50%;
     opacity: .6;
     }
-    /* Properties for - Position / Orbit / Radius / Rotation */
+
     #earth-orbit {
     position: relative;
     top: calc(50% - 600px);
     left: calc(50% - 140px);
     width: 250px;
     height: 250px;
-    /* margin-top: -250px;
-    margin-left: -250px; */
     border-width: 2px;
     border-style: dotted;
     border-color: white;
     border-radius: 50%;
     opacity: .7;
-    /* Animating Earth - Rotation and Speed */
+
     -webkit-animation: spin-right 10s linear infinite;
     -moz-animation: spin-right 10s linear infinite;
     -ms-animation: spin-right 10s linear infinite;
     -o-animation: spin-right 10s linear infinite;
     animation: spin-right 10s linear infinite;
     }
-    /* End of Earth's Properties */
-    /* Properties for the Mars */
+
     #mars {
     position: absolute;
     top: 0%;
@@ -133,11 +125,10 @@
     margin-left: -10px;
     margin-top: -10px;
     background-color: #a32924;
-
     border-radius: 50%;
     opacity: .6;
     }
-    /* Properties for - Position / Orbit / Radius / Rotation */
+ 
     #mars-orbit {
     position: relative;
     top: calc(50% - 880px);
@@ -150,16 +141,13 @@
     border-radius: 50%;
     opacity: .7;
 
-    /* Animating Mars - Rotation and Speed */
     -webkit-animation: spin-right 15s linear infinite;
     -moz-animation: spin-right 15s linear infinite;
     -ms-animation: spin-right 15s linear infinite;
     -o-animation: spin-right 15s linear infinite;
     animation: spin-right 15s linear infinite;
     }
-    /* End of Mars' Properties */
 
-    /* Properties for the Jupiter */
     #jupiter {
     position: absolute;
     top: 0%;
@@ -172,7 +160,7 @@
     border-radius: 50%;
     opacity: .6;
     }
-    /* Properties for - Position / Orbit / Radius / Rotation */
+
     #jupiter-orbit {
     position: relative;
     top: calc(50% - 1200px);
@@ -184,8 +172,7 @@
     border-color: white;
     border-radius: 50%;
     opacity: .7;
-    
-    /* Animating Jupiter - Rotation and Speed */
+
     -webkit-animation: spin-right 20s linear infinite;
     -moz-animation: spin-right 20s linear infinite;
     -ms-animation: spin-right 20s linear infinite;
@@ -193,7 +180,6 @@
     animation: spin-right 20s linear infinite;
     }
     
-
     /* Keyframes for Roatation */
   @-webkit-keyframes spin-right {
     100% {
