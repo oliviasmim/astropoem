@@ -1,15 +1,18 @@
 import { GoHomeProvider } from "./GoHome";
 import { NasaPhotoProvider } from "./GetImage";
 import { GetPoemProvider } from "./GetPoem";
+import { ModalProvider } from "./Modal";
 const Providers = ({ children }) => {
     return (
-        <GetPoemProvider>
-        <NasaPhotoProvider>
-            <GoHomeProvider>
-                {children}
-            </GoHomeProvider>
-        </NasaPhotoProvider>
-        </GetPoemProvider>
+        <ModalProvider>
+            <GetPoemProvider>
+                <NasaPhotoProvider>
+                    <GoHomeProvider>
+                        {children}
+                    </GoHomeProvider>
+                </NasaPhotoProvider>
+            </GetPoemProvider> 
+        </ModalProvider>
     )
 };
 
