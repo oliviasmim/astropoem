@@ -1,9 +1,7 @@
 import { createContext, useEffect, useState, useContext } from "react";
 import { nasaAPI } from "../../services/nasaAPI";
 
-
 const NasaPhotoContext = createContext();
-
 
 export const NasaPhotoProvider = ({ children }) => {
     const event = new Date();

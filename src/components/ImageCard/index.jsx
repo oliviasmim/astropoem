@@ -11,15 +11,18 @@ export const ImageCard = () => {
     return (
         <Section>
             <div>
-                <span>{date}</span>
+                <div className="flex">
+                    <span>
+                        {date}
+                    </span> 
+                    <Button icon={<CircleInformation size="medium" color="plain"/>} hoverIndicator onClick={handleOpen} />
+                </div>
                 <h2>{title}</h2>
             </div>
             <Figure alt={title} imageSrc={imageSrc}>
                 <img alt={title} src={imageSrc}/>
             </Figure>
-            <span className="button">
-                <Button icon={<CircleInformation size="large" color="plain"/>} hoverIndicator onClick={handleOpen} />
-            </span>
+                
         </Section>       
     )
 }

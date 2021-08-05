@@ -1,11 +1,11 @@
-import { Box, Button, Layer, FormField, Select, TextInput, Text, Heading } from 'grommet';
+import { Box, Button, Layer } from 'grommet';
 import { useModal } from '../../provider/Modal';
 import { useNasaPhoto } from '../../provider/GetImage';
 import { FormClose } from 'grommet-icons';
 import { Section } from './styles';
 
 export const Modal = () => {
-    const { handleOpen, handleClose, showModal } = useModal();
+    const { handleClose } = useModal();
     const { title, explanation } = useNasaPhoto();
     
     return (

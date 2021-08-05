@@ -9,10 +9,13 @@ export const Section = styled.section`
 
     article {
         overflow: auto;
+        
         h2 {
         font-family: var(--font-title);
         margin-bottom: 0.5rem;
+        padding-right: 2rem;
         }
+
         p {
             font-family: var(--font-text);
             color: var(--content-color)
