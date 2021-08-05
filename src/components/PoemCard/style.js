@@ -3,9 +3,10 @@ import styled from "styled-components";
 export const Container = styled.section`
     @media (min-width: 768px){
         width: 30%;
-        max-height: 100%;
+        max-height: 80vh;
         border: 3px solid var(--dark-red);
         padding: 1rem;
+        overflow: auto;
     }
     background-color: var(--white);
     padding: 0.8rem;
@@ -26,7 +27,6 @@ export const Container = styled.section`
     article {
         text-align: center;
         overflow: auto;
-        max-height: 80%;
         p {
             font-family: var(--font-text);
             color: var(--content-color)
