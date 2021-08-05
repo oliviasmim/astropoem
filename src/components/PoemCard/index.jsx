@@ -2,7 +2,7 @@ import { usePoem } from "../../provider/GetPoem"
 import { Container } from "./style";
 export const PoemCard = () => {
     const { title, content, poet } = usePoem();
-    const phrases = content.split("\n")
+    const phrases = content.split("\n");
     return (
         <Container>
            <article>
