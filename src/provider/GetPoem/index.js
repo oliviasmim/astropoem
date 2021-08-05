@@ -1,11 +1,12 @@
 import { createContext, useEffect, useState, useContext } from "react";
 import { poemistAPI } from "../../services/poemistAPI";
-
+import { olavo } from "./olavo";
 const GetPoemContext = createContext();
 
 export const GetPoemProvider = ({ children }) => {
     const [poem, setPoem] = useState(null);
     const [error, setError] = useState(false);
+    
     const getRandomInFive = () => {
         return Math.floor(Math.random() * 5);
     }
@@ -33,9 +34,9 @@ export const GetPoemProvider = ({ children }) => {
         return (
             <GetPoemContext.Provider 
             value={{
-                title: "",
-                content: "",
-                poet: "",
+                title: olavo.title,
+                content: olavo.content,
+                poet: olavo.poet,
             }}
             >
                 {children}
