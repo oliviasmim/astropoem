@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export const Home = () => {
     const { showModal } = useModal();
-    console.log(showModal)
+
     return (
         <motion.div
             initial={{ opacity: 0 }}

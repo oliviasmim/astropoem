@@ -26,6 +26,7 @@ export const GetPoemProvider = ({ children }) => {
         } else {
             setPoem(JSON.parse(sessionStorage.getItem("@AstroPoem:")))
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     if(!poem){
