@@ -12,13 +12,17 @@ export const GetPoemProvider = ({ children }) => {
     }
 
     const fetchPoem = () => {
+        const randomInt = getRandomInFive();
         setError(false);
         poemistAPI.get()
                   .then((response) => {
-                      setPoem(response.data[getRandomInFive()]);
-                      sessionStorage.setItem("@AstroPoem:", JSON.stringify(poem))
+                      sessionStorage.setItem("@AstroPoem:", JSON.stringify(response.data[randomInt]));
+                      setPoem(response.data[randomInt]);
                     }) 
-                  .catch((err) => setError(true))
+                  .catch((err) => {
+                      setError(true);
+                      console.log(err)
+                    });
     }
 
     useEffect(() => {
